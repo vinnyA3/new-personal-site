@@ -9,6 +9,11 @@
 	align-items: center;
 	/* box-shadow: 3px 0px 2px 12px rgba(0,0,0,1); */
 
+	.social-links > li {
+		display: inline-block;
+		margin-right: 1.2em;
+	}
+
 	&__main-img {
 		height: 220px;
 		width: 220px;
