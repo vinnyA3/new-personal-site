@@ -14,6 +14,7 @@
 
 	&__list > li {
 		margin-bottom: 1.4em;
+		display: block;
 	}
 
 	&__list-title {
@@ -22,6 +23,16 @@
 
 	&__list-description {
 		font-style: oblique;
+	}
+
+	&__links {
+		float: right;
+
+		> li {
+			display: inline;
+			margin-right: .8em;	
+		}
+
 	}
 
 }
