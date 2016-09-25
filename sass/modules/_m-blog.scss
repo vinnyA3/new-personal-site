@@ -1,0 +1,15 @@
+.blog-hero {
+	height: 320px;
+  width: 100%;
+	background: hsl(0, 0%, 8%);
+	padding: 1em;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__post-title {
+		font-size: 2em;
+		font-weight: bold;
+	}
+}
