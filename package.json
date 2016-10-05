@@ -5,11 +5,15 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"start": "webpack-dev-server --inline"
+    "start": "webpack-dev-server --inline"
   },
   "keywords": [
     "Website"
   ],
   "author": "vinnya3",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "file-loader": "^0.9.0",
+    "url-loader": "^0.5.7"
+  }
 }

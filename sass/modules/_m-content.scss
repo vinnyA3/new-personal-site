@@ -1,6 +1,11 @@
 .content {
-	float: right;
 	height: 100%;
-	width: 45%;
+	width: 100%;
 	background: #fff;
+
+	@media screen and (min-width: 920px) {
+		float: right;
+		height: 100%;
+		width: 45%;
+	}
 }

@@ -1,7 +1,6 @@
 .portfolio {
 	padding: 2em;
 	display: flex;
-	background: #000;
 
 	&__content {
 		width: 100%;
@@ -10,6 +9,7 @@
 	&__title {
 		font-size: 1.5em;
 		width: 100%;
+		margin-bottom: 1.5em;
 	}
 
 	&__list > li {
@@ -30,7 +30,7 @@
 
 		> li {
 			display: inline;
-			margin-right: .8em;	
+			margin-right: .8em;
 		}
 
 	}

@@ -1,12 +1,28 @@
 .blog-hero {
 	height: 320px;
   width: 100%;
-	background: hsl(0, 0%, 8%);
-	padding: 1em;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	/* background: hsl(221, 64%, 42%); */
+	background-image: url('../assets/img/rick&morty.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
+	position: relative;
+
+	&__layer {
+		height: 320px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: #fff;
+		width: 100%;
+		padding: 1em;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: hsla(242, 93%, 52%, 0.4);
+	}
 
 	&__post-title {
 		font-size: 2em;
