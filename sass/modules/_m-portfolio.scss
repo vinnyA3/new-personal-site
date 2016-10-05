@@ -13,8 +13,13 @@
 	}
 
 	&__list > li {
-		margin-bottom: 1.4em;
+		margin-bottom: 2em;
 		display: block;
+	}
+
+	&__item {
+		float: left;
+		width: 80%;
 	}
 
 	&__list-title {
@@ -22,7 +27,8 @@
 	}
 
 	&__list-description {
-		font-style: oblique;
+		font-size: .7em;
+		font-style: italic;
 	}
 
 	&__links {

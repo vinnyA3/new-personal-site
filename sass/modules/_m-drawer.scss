@@ -1,10 +1,11 @@
 /* MEDIA QUERIES LOCATED AT END OF MODULE */
 
 	.drawer {
+	display: flex;
 	position: relative;
 	width: 100%;
  	font-size: 1.5em;
-	padding: 1.1em 4.5em 1.1em 1.1em;
+	padding: 1.1em;
 	color: #fff;
 	background: rgb(54, 106, 237);
 	background-image: linear-gradient(rgb(27, 19, 247), rgb(86, 86, 86));
@@ -12,47 +13,37 @@
 	align-items: center;
 	/* box-shadow: 3px 0px 2px 12px rgba(0,0,0,1); */
 
+	&__content {
+		padding-right: 2em;
+		text-align: left;
+	}
+
 	.social-links > li {
 		display: inline-block;
 		margin-right: .7em;
 	}
 
-	&__marker {
+	/* &__marker {
 		position: absolute;
-		top: 4.7em;
+		top: 8.5em;
 		color: #fff;
-		padding: .2em;
+		padding: .4em .8em .4em .8em;
+		font-size: .6em;
 		right: 1.1em;
-		height: 1.5em;
-		width: 1.5em;
 		background: rgb(27, 19, 247);
 		border-radius: .05em;
-		box-shadow: .1em .2em .6em rgba(0,0,0,0.6);
+		box-shadow: -.2em .2em .6em rgba(0,0,0,0.6);
 		z-index: 1000;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transform: rotate(-90deg);
 
 		&:hover {
 			cursor: pointer;
 		}
 
-		> i {
-			font-size: .7em;
-		}
-
-		&:after {
-			content: '';
-			position: absolute;
-			border-left: .5em solid rgb(27, 19, 247);
-			border-top: .5em solid transparent;
-			border-bottom: .5em solid transparent;
-			top: .24em;
-			right: -.46em;
-			z-index: 900;
-		}
-
-	}
+	} end marker */
 
 	&__main-img {
 		height: 220px;
