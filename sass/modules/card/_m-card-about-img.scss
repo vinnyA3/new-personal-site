@@ -1,15 +1,19 @@
 /* ==== CARD IMAGE CONTAINER ==== */
 
-  &__img-container {
+  .card__img-container {
     width: 100%;
     padding-top: inherit;
     padding-bottom: inherit;
     @extend %flex-center;
     position: relative;
+    overflow: hidden;
     &:before {
       content: '';
       position: absolute;
       top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       height: 50%;
       width: 100%;
       background: $card-main-color;
@@ -21,6 +25,7 @@
     }
 
     @media screen and (min-width: $media-md) {
-      display: block;
+      display: none;
     }
+
   }
