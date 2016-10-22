@@ -23,3 +23,5 @@ var FormControl = (function() {
       init: initialize
     }
   })();
+
+  FormControl.init();
