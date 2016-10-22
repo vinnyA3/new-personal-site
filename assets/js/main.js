@@ -1,4 +1,6 @@
 // SASS include
 require('../../sass/_main.scss');
 // JS include
-require('./scripts.js');
+require('./form_control.js');
+require('./message_control.js');
+FormControl.init();
