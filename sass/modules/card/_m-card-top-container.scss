@@ -1,0 +1,49 @@
+/* ==== CARD TOP CONTAINER ==== */
+
+.card__top-container {
+    width: inherit;
+    padding: inherit;
+    text-align: center;
+    background: $card-main-color;
+    color: #fff;
+    span {
+      display: none;
+    }
+    .btn.btn-important {
+      display: none;
+    }
+
+    @media screen and (min-width: $media-md) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: inherit;
+      width: 50%;
+      height: 100%;
+      text-align: left;
+      font-size: 1.6em;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      h1 {
+        display: none;
+      }
+      span {
+        display: block;
+      }
+      .btn.btn-important {
+        display: block;
+      }
+    }
+
+}
+/* Card hero text: located in top container...obviously */
+.card__hero-text {
+    position: relative;
+    font-weight: bold;
+    > span {
+      font-size: .4em;
+      position: absolute;
+      top: .5em;
+    }
+  }

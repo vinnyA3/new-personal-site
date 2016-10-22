@@ -1,0 +1,31 @@
+  .card__projects {
+    display: none;
+    padding-top: inherit;
+    @include heading-styles;
+    ul li:not(:last-child) {
+       margin-bottom: 2em;
+    }
+    .projects-text {
+      p {
+        margin-top: -.1em;
+        font-style: italic;
+        font-size: .85em;
+      }
+      ul, li {
+        display: inline;
+        color: $card-main-color;
+        &:hover {
+          cursor: pointer;
+          color: $card-main-color-hover;
+        }
+      }
+      li {
+        margin-left: .4em;
+      }
+    }
+
+    /* Card Projects Media */
+    @media screen and (min-width: $media-sm) {
+      display: block;
+    }
+  }

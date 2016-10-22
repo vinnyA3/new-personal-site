@@ -1,0 +1,26 @@
+/* ==== CARD IMAGE CONTAINER ==== */
+
+  &__img-container {
+    width: 100%;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    @extend %flex-center;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 50%;
+      width: 100%;
+      background: $card-main-color;
+      z-index: 1;
+    }
+    > .img-wrap {
+      width: 60%;
+      z-index: 2;
+    }
+
+    @media screen and (min-width: $media-md) {
+      display: block;
+    }
+  }

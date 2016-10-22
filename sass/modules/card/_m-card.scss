@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: .5em;
+  
+  @media screen and (min-width: $media-md) {
+    flex-direction: row;
+    padding: 3em;
+  }
+}

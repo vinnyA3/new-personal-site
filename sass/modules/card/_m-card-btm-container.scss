@@ -1,0 +1,23 @@
+/* ==== CARD BOTTOM CONTAINER ==== */
+/* The child elements are in their separate files...this file should probably be in layout... */
+
+ .card__btm-container {
+    width: 100%;
+    padding: inherit;
+    text-align: left;
+
+    @media screen and (min-width: $media-md) {
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+  }
+
+  /* Child Text -> no clue what this is..but i know it's in btm container */
+  /* I really need to refactor this */
+  .card__text {
+    text-indent: 1em;
+  }

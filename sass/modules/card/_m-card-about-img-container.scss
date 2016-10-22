@@ -1,0 +1,19 @@
+  /* ==== ABOUT IMAGE ==== */
+  /* About image is a figure element */
+  .card__about-img {
+    /* Ugly overrides ... inspect what could be wrong.. */
+    margin-top: -3em;
+    margin-left: -3em;
+    margin-right: -3em;
+    display: none;
+    figcaption {
+      font-size: .65em;
+      font-style: italic;
+      text-align: center;
+    }
+
+    @media screen and (min-width: $media-md) {
+        display: none;
+    }
+    
+  }

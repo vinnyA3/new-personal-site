@@ -1,0 +1,28 @@
+/* ==== GLOBAL BUTTON STYLES ==== */
+
+/* Button styles*/
+/* Note: important class controls translateY/3d hover effect */
+.btn {
+  padding: 1em;
+  font-weight: bold;
+  color: inherit;
+  &:focus {
+    outline: none;
+  }
+  &-important {
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    box-shadow: 0em 0em .2em .2em transparent;
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-.5em);
+      box-shadow: 0em .6em .2em -.4em black;
+    }
+  }
+  &-success {
+    background: $card-main-color-hover;
+  }
+  &-cancel {
+    background: #898989;
+  }
+}

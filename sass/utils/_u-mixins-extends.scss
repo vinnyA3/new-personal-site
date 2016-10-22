@@ -1,0 +1,28 @@
+/* ==== GLOBAL MIXINS AND EXTENDABLES ==== */
+
+/* Extendable class: flex display / center items */
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mixin: Repeatable styling for section headings */
+@mixin heading-styles {
+  > h1 {
+    position: relative;
+    margin-bottom: 1.4em;
+    i {
+      color: $card-main-color;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background: $card-main-color;
+      left: 0;
+      bottom: -.3em;
+      width: 1em;
+      height: .15em;
+    }
+  }
+}

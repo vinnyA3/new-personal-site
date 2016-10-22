@@ -1,0 +1,39 @@
+/* ==== CARD FORM MODULE === */
+
+.card__contact-form {
+  display: none;
+  position: absolute;
+  transform: translateY(100em);
+  width: 100%;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  > form {
+    span {
+      margin-bottom: .8em;
+    }
+    width: 100%;
+    .form-ctl {
+      width: inherit;
+      &:not(:last-child) {
+        margin-bottom: .3em;
+      }
+      &:first-child, &:last-child {
+        display: flex;
+      }
+      * {
+        width: 100%;
+      }
+    }
+    .form-group {
+      flex: 1;
+      &:first-child {
+        margin-right: .3em;
+      }
+    }
+  }
+
+  @media screen and (min-width: $media-md) {
+    display: block;
+  }
+
+}
