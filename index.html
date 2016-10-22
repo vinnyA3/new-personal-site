@@ -8,126 +8,130 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<!-- FONTS -->
-		<link href="https://fonts.googleapis.com/css?family=Duru+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	</head>
 	<body>
-	<div class="wrapper">
-
-		<div class="drawer">
-			<div class="drawer__content">
-				<!-- <img class="drawer__main-img" src="assets/img/hendrix.jpg" /> -->
-				<!-- <div class="drawer__marker"><span>Blog</span></div> -->
-				<span class="drawer__slogan">Welcome to my site!</span>
-				<h1 class="drawer__title">Enjoy your stay!</h1>
-				<span class="drawer__description">I'm Vinny.<br/ >Full Stack Developer.  Entrepreneur.</span>
-				<ul class="social-links">
-					<li><a href="https://github.com/vinnyA3" target="_blank"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/vinaceto" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="mailto:vincent.aceto@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+		<div class="wrapper">
+		<div class="card">
+			<section class="card__top-container">
+			<div class="card__hero-text">
+				<h1>Vinny Aceto</h1><span>Hey, I'm Vincent</span>
+				<p>Freelance Web Developer, Entreprenuer, Part-Time Couch Potato</p>
+				<p> 
+				<button class="btn btn-important btn-success">Want to work together?</button>
+				</p>
+			</div>
+			<div class="card__contact-form">
+				<form>
+				<div class="form-ctl">      
+					<div class="form-group">
+					<label for="first-name">First</label>
+					<input id="first-name" type="text"/>
+					</div>
+					<div class="form-group"> 
+					<label for="last-name">Last</label>
+					<input id="last-name" type="text"/>
+					</div>
+				</div>
+				<div class="form-ctl"> 
+					<label for="email">Email</label>
+					<input id="email" type="email"/>
+				</div>
+				<div class="form-ctl"> 
+					<label for="message">Message</label>
+					<textarea id="message"></textarea>
+				</div>
+				<div class="form-ctl">
+					<div class="form-group">
+					<button class="btn btn-important btn-success">Send</button>
+					</div>
+					<div class="form-group">
+					<button class="btn btn-important btn-cancel">Cancel</button>
+					</div>
+				</div>
+				</form>
+			</div>
+			</section>
+			<section class="card__img-container">
+			<div class="img-wrap"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242428/profile/profile-512_6.jpg"/></div>
+			</section>
+			<section class="card__btm-container">
+			<figure class="card__about-img"><img src="http://cityhub.movoto.com/1465887045507_10-places-in-new-york-with-the-best-home-appreciation-rates-featured.jpg"/><br/>
+				<figcaption>NYC. Temporary picture until I find a good photo of myself.</figcaption>
+			</figure>
+			<div class="card__text">
+				<p>Hey, my name is Vinny Aceto and I am a full stack developer from Staten Island, NY. With a strong back end development experience coupled with an eye for design, I can confidently say that no mountain is too tall to climb. Currently, I am working as a freelance developer. When I am not hacking away at the keyboard, I can usually be found strumming the guitar, working out, or playing with my dog.</p>
+			</div>
+			<div class="card__projects">
+				<h1> <i class="fa fa-sticky-note-o"></i> &nbsp; Projects</h1>
+				<ul>
+				<li>
+					<div class="projects-text"><span>Catorgorize Me</span>
+					<ul>
+						<li><a href="https://github.com/vinnyA3/item-catalog" target="_blank"><i class="fa fa-github"></i></a></li>
+					</ul>
+					<p>Python web application to catagorize and store topics</p>
+					</div>
+				</li>
+				<li>
+					<div class="projects-text"><span>Game of Life</span>
+					<ul>
+						<li><a href="https://github.com/vinnyA3/game-of-life" target="_blank"><i class="fa fa-github"></i></a></li>
+					</ul>
+					<p>Conway's Game of Life in Javascript</p>
+					</div>
+				</li>
+				<li>
+					<div class="projects-text"><span>Swap 'N Go Book Club</span>
+					<ul>
+						<li><a href="https://github.com/vinnyA3/bookclub-app" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://stark-island-14379.herokuapp.com/" target="_blank"><i class="fa fa-globe"></i></a></li>
+					</ul>
+					<p>Progressive web appication that enables book sharing among voracious readers</p>
+					</div>
+				</li>
+				<li>
+					<div class="projects-text"><span>Nightlife.IO</span>
+					<ul>
+						<li><a href="https://github.com/vinnyA3/nightlife-app" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://enigmatic-tor-71692.herokuapp.com/" target="_blank"><i class="fa fa-globe"></i></a></li>
+					</ul>
+					<p>A full stack JS application that allows one to search for local nightlife</p>
+					</div>
+				</li>
+				<li>
+					<div class="projects-text"><span>Developer's Codex</span>
+					<ul>
+						<li><a href="https://github.com/vinnyA3/devs-codex" target="_blank"><i class="fa fa-github"></i></a></li>
+					</ul>
+					<p>A handy field guide for web developers</p>
+					</div>
+				</li>
 				</ul>
 			</div>
+			<div class="card__blog-module">
+				<h1><i class="fa fa-commenting-o"></i>&nbsp; Latest Blog Post</h1>
+				<div class="blog__card">
+				<div class="blog__image"></div>
+				<div class="blog__title"> 
+					<h1>Hello World!</h1>
+				</div>
+				<div class="blog__text">Hey, welcome to my blog!  This is my first ever blog post, so be kind.  First of all...</div>
+				<div class="blog__links"><a href=""><span>View Post</span></a><a href=""><span>View Blog</span></a></div>
+				</div>
+			</div>
+			<div class="card__social">
+				<h1><i class="fa fa-hashtag"></i>&nbsp; Connect with Me</h1>
+				<ul>
+				<li><a href="mailto:vincent.aceto@gmail.com"><span>Email Me</span><i class="fa fa-envelope-o"></i></a></li>
+				<li><a href="https://www.github.com/vinnyA3" target="_blank"><span>Github</span><i class="fa fa-github"></i></a></li>
+				<li><a href="https://www.codepen.io/vinnyA3" target="_blank"><span>Codepen</span><i class="fa fa-codepen"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/vinaceto" target="_blank"><span>Linkedin</span><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+			</section>
 		</div>
-
-		<div class="content">
-			<div class="blog-hero">
-				<a href="/blog">
-				<div class="blog-hero__layer">
-					<div class="blog-hero__post-title">Hello World!</div>
-				</div>
-				</a>
-			</div>
-			<div class="about">
-				<div class="about__content">
-					<h1 class="about__title">Who Am I?</h1>
-					<p>
-						Hey, my name is Vinny Aceto and I am a full stack developer from Staten Island, NY.
-With a strong back end development experience coupled with an eye for design, I can confidently say that no mountain is too tall to climb.  Currently, I am working as a freelance developer.  When I am not hacking away at
-the keyboard, I can usually be found strumming the guitar, working out, or playing with my dog.
-					</p>
-				</div>
-			</div>
-			<div class="my-image">
-				<img src="assets/img/bergamo.jpg" />
-			</div>
-			<div class="portfolio">
-				<div class="portfolio__content">
-					<h1 class="portfolio__title">Check Out My Projects</h1>
-					<ul class="portfolio__list">
-						<li>
-							<div class="portfolio__item">
-								<span class="portfolio__list-title">Catorgorize Me</span><br />
-								<span class="portfolio__list-description">Python web application to catagorize and store topics</span>
-							</div>
-							<ul class="portfolio__links">
-								<li>
-									<a href="https://github.com/vinnyA3/item-catalog" target="_blank"><i class="fa fa-github"></i></a>
-								</li>
-							</ul>
-							<div class="clear"></div>
-						</li>
-						<li>
-							<div class="portfolio__item">
-								<span class="portfolio__list-title">Game of Life</span><br />
-								<span class="portfolio__list-description">Conway's Game of Life in Javascript</span>
-							</div>
-							<ul class="portfolio__links">
-								<li>
-									<a href="https://github.com/vinnyA3/game-of-life" target="_blank"><i class="fa fa-github"></i></a>
-								</li>
-							</ul>
-							<div class="clear"></div>
-						</li>
-						<li>
-							<div class="portfolio__item">
-								<span class="portfolio__list-title">Swap 'N Go Book Club</span><br />
-								<span class="portfolio__list-description">Progressive web appication that enables book sharing among voracious readers</span>
-							</div>
-							<ul class="portfolio__links">
-								<li>
-									<a href="https://github.com/vinnyA3/bookclub-app" target="_blank"><i class="fa fa-github"></i></a>
-								</li>
-								<li>
-									<a href="https://stark-island-14379.herokuapp.com/" target="_blank"><i class="fa fa-globe"></i></a>
-								</li>
-							</ul>
-							<div class="clear"></div>
-						</li>
-						<li>
-							<div class="portfolio__item">
-								<span class="portfolio__list-title">Nightlife.IO</span><br />
-								<span class="portfolio__list-description">A full stack JS application that allows one to search for local nightlife</span>
-							</div>
-							<ul class="portfolio__links">
-								<li>
-									<a href="https://github.com/vinnyA3/nightlife-app" target="_blank"><i class="fa fa-github"></i></a>
-								</li>
-								<li>
-									<a href="https://enigmatic-tor-71692.herokuapp.com/" target="_blank"><i class="fa fa-globe"></i></a>
-								</li>
-							</ul>
-							<div class="clear"></div>
-						</li>
-						<li>
-							<div class="portfolio__item">
-								<span class="portfolio__list-title">Developer's Codex</span><br />
-								<span class="portfolio__list-description">A handy field guide for web developers</span>
-							</div>
-							<ul class="portfolio__links">
-								<li>
-									<a href="https://github.com/vinnyA3/devs-codex" target="_blank"><i class="fa fa-github"></i></a>
-								</li>
-							</ul>
-							<div class="clear"></div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer">
-				<h1 class="footer__title">Vinny Aceto  <i class="fa fa-copyright"></i></h1>
-			</div>
 		</div>
-	</div> <!-- ./wrapper -->
 	<script src='bundle.js'></script>
 	</body>
 </html>
