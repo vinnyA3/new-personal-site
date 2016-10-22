@@ -1,9 +1,10 @@
 /* MAIN SASS FILE WITH ALL IMPORTS */
+/* Utils */
+@import './utils/_u-master.scss';
 /* Base */
 @import './base/_b-master.scss';
 /* Layout */
 @import './layout/_l-master.scss';
 /* Modules */
 @import './modules/_m-master.scss';
-/* Utils */
-@import './utils/_u-master.scss';
+
