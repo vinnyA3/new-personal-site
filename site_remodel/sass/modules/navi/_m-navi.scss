@@ -1,0 +1,25 @@
+.navi-aside {
+    display: none;
+}
+
+.navi {
+    width: 100%;
+    padding: 1em 2em 1em 2em;
+    background: blue;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    &__brand {
+        height: 1em;
+        width: 1.2em;
+        background: #fff;
+    }
+
+    &__menu {
+        height: 1em;
+        width: 1.2em;
+        background: #fff;
+    }
+
+}
