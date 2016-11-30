@@ -1,8 +1,9 @@
 /* Variables */
-$padding: .2em .6em .2em .6em;
+$padding: .2em 2em .2em 2em;
 
 .wrapper {
     height: 100%;
     width: 100%;
-    padding: $padding; 
+    margin: 0 auto;
+    background: red;
 }
