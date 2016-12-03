@@ -19,4 +19,4 @@ soon, but I have other projects that I am currently working on.
 
 ---
 
-**New Site Coming Soon!!**
+**New Site Coming Soon!!****new site update: planning ....**
