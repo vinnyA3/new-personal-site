@@ -1,0 +1,9 @@
+.fluid-social {
+    width: 100%;
+    @include flex($justify: space-between);
+
+    &__links {
+        @include flex($justify: center, $align: center);
+        flex: 1;
+    }
+}

@@ -1,0 +1,18 @@
+$base-font-family: 'Open Sans', sans-serif;
+$base-heading-font-family: 'Oswald', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $base-heading-font-family;
+}
+
+p,
+li,
+span,
+a {
+    font-family: $base-font-family;
+}

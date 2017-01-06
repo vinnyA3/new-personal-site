@@ -1,0 +1,23 @@
+@mixin media-container($align: center) {
+    text-align: $align;
+    @include media-title;
+    @include media-info;
+}
+
+@mixin media-title($margin: null, $size: null, $color: null, $text-style: null, $letter-spacing: null) {
+    &__title {
+        margin: $margin;
+        font-size: $size;
+        color: $color;
+        text-transform: $text-style;
+        letter-spacing: $letter-spacing;
+    }
+}
+
+@mixin media-info($margin: null, $size: null, $color: null, $text-style: null) {
+    &__information {
+        margin: $margin;
+        font-size: $size;
+        color: $color;
+    }
+}

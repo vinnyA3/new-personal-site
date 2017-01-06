@@ -3,56 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Vinny Aceto</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 </head>
 <body>
-
-    <aside class="navi-aside">
-        <header class="aside-navi">
-            <nav class="navi navi--main">
-                <div class="nav__brand"></div>
-                <div class="navi__menu"></div>
-            </nav>
-        </header>
-    </aside> <!-- ./navi-aside -->
-
-    <div class="wrapper">
-        <header class="main-head">
-            <nav class="navi navi--main">
-                <div class="navi__brand"></div>
-                <div class="navi__menu"></div>
-            </nav>
-            <section class="main-head__heading">
-                <h1 class="main-heading">Hello There</h1>
-            </section>
-        </header> <!-- ./main-head -->
-
-        <main class="content">
-            <section class="about">
-                <h2 class="about__heading"></h2>
-            </section>
-
-            <section class="projects">
-                <section class="projects__info">
-                    <h2 class="projects__heading">Projects</h2>
-                </section>
-                <div class="projects__block"></div>
-                <div class="projects__block"></div>
-                <div class="projects__block"></div>
-            </section>
-
-            <section class="blog">
-                <h2 class="blog__heading"></h2>
-                <a href="/blog">View blog</a>
-            </section>
-
-            <section class="contact">
-                <h2 class="contact__heading">Contact..</h2>
-                <h3 class="contact__email">Email..</h3>
-                <p class="contact__info"></p>
-            </section>
-        </main> <!-- ./content -->
-    </div> <!-- ./wrapper -->
-
+    <header class="main-header">
+        <section class="main-header__content">
+            <h1 class="main-header__title">Vincent Aceto</h1>
+            <p class="main-header__information">this is some introdcution to who I am and what I do.  this is some introdcution to who I am and what I do</p>
+            <!-- Fluid Social Component -->
+            <ul class="fluid-social">
+                <li class="fluid-social__links"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="fluid-social__links"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li class="fluid-social__links"><a href="#"><i class="fa fa-codepen"></i></a></li>
+                <li class="fluid-social__links"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </section>
+    </header>
+    <!-- ./ main-header -->
+    <main class="site-content">
+        <section class="blog">
+            <article class="blog-content">
+                <h1 class="blog__title">Blog TItle</h1>
+                <p class="blog__excerpt">svdfuvbsdfvsdfvsdfvsdfv</p>
+                <a href="#" class="blog__more">> Read More</a>
+            </article>
+        </section>
+        <!-- ./blog-container -->
+        <section class="projects">
+            <article class="project-content">
+                <h1 class="project__title">Project</h1>
+                <p class="project__information">a project description</p>
+            </article>
+            <article class="project-content"></article>
+            <article class="project-content"></article>
+            <article class="project-content"></article>
+        </section>
+        <!-- ./projects -->
+        <section class="contact">
+            <article class="contact-content">
+                <h1 class="contact__title">Get in touch</h1>
+                <p class="contact__information">this is some dummy fucker text</p>
+                <h3 class="contact__email">vincent.aceto@gmail.com</h3>
+            </article>
+        </section>
+    </main>
 </body>
 <script src="bundle.js"></script>
 </html>

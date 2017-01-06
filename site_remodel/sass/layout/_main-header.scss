@@ -1,0 +1,6 @@
+.main-header {
+    @include section-container;
+    @include padding;
+    // main-header__title
+    @include media-title($text-style: uppercase, $letter-spacing: .08em);
+}
