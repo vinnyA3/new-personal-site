@@ -1,0 +1,28 @@
+.blog {
+    background: url("http://d1i6tehnj672py.cloudfront.net/wp-content/uploads/2015/09/candiceswanepoel-mytown-mag11.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 500;
+    }
+}
+
+.blog-content {
+    z-index: 1000;
+}
+
+// SHAME
+.blog__title {
+    margin: 0;
+    color: #D6CF0A;
+}
