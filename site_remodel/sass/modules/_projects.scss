@@ -2,22 +2,12 @@
    
     &-content {
          position: relative;
-
-      &:before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: all 0.8s ease;
-          border-bottom: .4em solid rgba(0,0,0,0);      
-      }
-
-      &:hover + &:before {
-          border-bottom: .4em solid rgba(0,0,0,1);
-      }
+         border-bottom: 1px solid #545454;
+         
+         &:not(:last-child) {
+             margin-bottom: 3em;
+         }
     }
 
-    @include media-title($color: #D6CF0A,$text-style: uppercase);
+    @include media-title($color: #5279D3);
 }

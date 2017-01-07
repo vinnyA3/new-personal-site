@@ -1,4 +1,7 @@
 .main-header {
-    background: $primary-site-color;
-    color: #000;
+    // background: $primary-site-color;
+    background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+    // color: $secondary-site-color;
+    @include media-title($size: 2.2em, $color: $secondary-site-color);
+    @include media-info($color: $secondary-site-color);
 }

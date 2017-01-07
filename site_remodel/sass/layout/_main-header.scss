@@ -1,6 +1,13 @@
 .main-header {
     @include section-container;
-    @include padding;
-    // main-header__title
-    @include media-title($text-style: uppercase, $letter-spacing: .08em);
+    @include padding(2em, 2em, 2em, 2em);
+    // main-header_
+
+    @include break(lg) {
+        @include flex($justify: center, $align: center);
+        position: fixed;
+        width: 48%;
+        height: 100%;
+        float: left;
+    }
 }

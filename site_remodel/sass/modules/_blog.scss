@@ -1,9 +1,14 @@
 .blog {
-    background: url("http://d1i6tehnj672py.cloudfront.net/wp-content/uploads/2015/09/candiceswanepoel-mytown-mag11.jpg");
-    background-position: center;
-    background-size: cover;
     color: #fff;
+}
+
+.blog-content {
     position: relative;
+    top: 0;
+    left: 0;
+    @include padding(2em, 2em, 2em, 2em);
+    z-index: 3000;
+    //transition: all 0.4s ease-in-out;
 
     &:before {
         content: '';
@@ -12,17 +17,25 @@
         width: 100%;
         top: 0;
         left: 0;
-        background: rgba(0,0,0,0.4);
-        z-index: 500;
+        background: rgba(0,0,0,.6);
+        z-index: -1;
     }
 }
 
-.blog-content {
-    z-index: 1000;
+// SHAME
+.blog {
+    @include media-title($color: #5279D3);
+    margin: 0;
 }
 
-// SHAME
-.blog__title {
-    margin: 0;
-    color: #D6CF0A;
+.fade-transition {
+  transition: all 0.8s ease;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+}
+.fade-enter, .fade-leave {
+  opacity: 0;
+  visibility: hidden;
 }

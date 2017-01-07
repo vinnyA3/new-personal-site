@@ -5,7 +5,7 @@
     <title>Vinny Aceto</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Montserrat" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -23,37 +23,45 @@
     </header>
     <!-- ./ main-header -->
     <main class="site-content">
-        <section class="blog">
-            <article class="blog-content">
-                <h1 class="blog__title">Blog TItle</h1>
-                <p class="blog__excerpt">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef venia...</p>
-                <a href="#" class="blog__more">> Read More</a>
-            </article>
+        <section id="blog-window" class="blog">
+                <div v-for="number in [currentPost]"
+                    transition="fade"
+                >
+                <article
+                    v-bind:style="[styles]" 
+                    class="blog-content"           
+                >
+                    <h3 class="blog__title">{{ posts[currentPost].title }}</h3>
+                    <p class="blog__excerpt">{{ posts[currentPost].content | trimString }}</p>
+                    <a @click.prevent="cycleNext" href="#" class="blog__more"> Read More</a>
+                </article>
+                </div>
         </section>
         <!-- ./blog-container -->
         <section class="projects">
             <article class="project-content">
-                <h1 class="project__title">Project</h1>
+                <h3 class="project__title">Developers Codex</h3>
                 <p class="project__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
             </article>
             <article class="project-content">
-                <h1 class="project__title">Project</h1>
+                <h3 class="project__title">Swap N Go</h3>
                 <p class="project__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
             </article>
             <article class="project-content">
-                <h1 class="project__title">Project</h1>
+                <h3 class="project__title">VME Creative</h3>
                 <p class="project__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
             </article>
         </section>
         <!-- ./projects -->
         <section class="contact">
             <article class="contact-content">
-                <h1 class="contact__title">Get in touch</h1>
+                <h3 class="contact__title">Get in touch</h3>
                 <p class="contact__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
-                <h3 class="contact__email">vincent.aceto@gmail.com</h3>
+                <h4 class="contact__email">vincent.aceto@gmail.com</h4>
             </article>
         </section>
     </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
 <script src="bundle.js"></script>
 </html>

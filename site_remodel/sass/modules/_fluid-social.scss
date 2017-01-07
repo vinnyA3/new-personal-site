@@ -1,9 +1,37 @@
 .fluid-social {
-    width: 100%;
-    @include flex($justify: space-between);
+    margin-top: 8em;
+    width: 23em;
+    color: #fff;
+    @include flex($justify: space-around);
 
     &__links {
-        @include flex($justify: center, $align: center);
+        position: relative;
         flex: 1;
+        @include flex($justify: center, $align: center);
+
+        &:nth-child(2) {
+            left: -2.6em;
+            top: -3em;
+        }
+
+        &:nth-child(n+3) {
+            right: 5.2em;
+        }
+
+        &:last-child {
+            top: -3em;
+            right: 7.8em;
+        }
+
+        // Triangle effect - refactor to mixin?
+        &:before {
+            content: '';
+            position: absolute;
+            height: 4em;
+            width: 4em;
+            background: $secondary-site-color;
+            z-index: -1;
+            transform: rotate(45deg);
+        }
     }
 }

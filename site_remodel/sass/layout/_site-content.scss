@@ -1,0 +1,7 @@
+.site-content {
+    @include break(lg) {
+        width: 52%;
+        float: right;
+        height: auto;
+    }
+}

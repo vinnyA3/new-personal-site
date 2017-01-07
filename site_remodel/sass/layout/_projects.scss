@@ -1,4 +1,4 @@
 .projects {
     @include section-container;
-    @include padding;
+    @include padding(2em, 2em, 2em, 2em);
 }

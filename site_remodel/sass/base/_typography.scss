@@ -1,4 +1,4 @@
-$base-font-family: 'Open Sans', sans-serif;
+$base-font-family: 'Oswald', sans-serif;
 $base-heading-font-family: 'Oswald', sans-serif;
 
 h1,
@@ -8,6 +8,8 @@ h4,
 h5,
 h6 {
     font-family: $base-heading-font-family;
+    letter-spacing: .05em;
+    text-transform: uppercase;
 }
 
 p,
@@ -15,4 +17,9 @@ li,
 span,
 a {
     font-family: $base-font-family;
+    letter-spacing: .03em;
+}
+
+p {
+    line-height: 2.4em;
 }

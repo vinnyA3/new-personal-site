@@ -6,11 +6,23 @@
 
 @mixin media-title($margin: null, $size: null, $color: null, $text-style: null, $letter-spacing: null) {
     &__title {
+        position: relative;
         margin: $margin;
         font-size: $size;
         color: $color;
         text-transform: $text-style;
         letter-spacing: $letter-spacing;
+
+        // Bottom border effect
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -.26em;
+            height: 100%;
+            width: 2em;
+            border-bottom: .26em solid $color;
+        }
     }
 }
 
