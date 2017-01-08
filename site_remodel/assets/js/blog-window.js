@@ -36,7 +36,8 @@ var blog_window = new Vue({
     computed: {
         styles: function() {
             return {
-                background: 'url('+this.posts[this.currentPost].image+') center center / cover no-repeat'
+                background: 'url('+this.posts[this.currentPost].image+') \
+                center center / cover no-repeat'
             }
         }
     }
