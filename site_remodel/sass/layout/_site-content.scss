@@ -1,5 +1,8 @@
 .site-content {
+
     @include break(lg) {
+        position: absolute;
+        right: -100%;
         width: 52%;
         float: right;
         height: auto;
