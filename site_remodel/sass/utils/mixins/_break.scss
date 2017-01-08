@@ -3,6 +3,7 @@
 
 $breakpoints: (
     lg: 59.375rem,
+    xl: 75rem
 );
 
 @mixin break($size) {  
