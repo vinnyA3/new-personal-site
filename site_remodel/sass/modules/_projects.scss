@@ -10,4 +10,10 @@
     }
 
     @include media-title($color: #5279D3);
+
+    &__tech-list {
+        color: #5279D3;
+        font-size: .8rem;
+        font-style: italic;
+    }
 }
