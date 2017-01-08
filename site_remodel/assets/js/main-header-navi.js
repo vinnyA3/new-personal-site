@@ -2,7 +2,7 @@
 
     if($(w).width() >= 950 ) {
 
-        var rotatedNavLinks = $('.rotated-navi > li > a');
+       // var rotatedNavLinks = $('.rotated-navi > li > a');
         var sections = $('.site-content').children();
 
         $(window).scroll(function() {
