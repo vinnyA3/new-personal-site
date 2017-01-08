@@ -4,13 +4,18 @@
     hub for all sass master imports.
 */
 
-/* === BASE === */
-@import './base/_b-master';
 /* === UTILS === */
 @import './utils/_u-master';
+/* === BASE === */
+@import './base/_b-master';
 /* === LAYOUT === */
 @import './layout/_l-master';
 /* === MODULES === */
 @import './modules/_m-master';
-/* === UTILS === */
-@import './utils/_u-master';
+
+
+// Shame
+.active {
+    transform: translateY(0em) !important;
+    opacity: 1 !important;
+}
