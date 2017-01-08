@@ -8,16 +8,25 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Montserrat" rel="stylesheet">
 </head>
 <body>
+    <div class="hamburger">
+        <i class="fa fa-bars"></i>
+    </div>
     <header class="main-header">
         <section class="main-header__content">
             <h1 class="main-header__title">Vincent Aceto</h1>
-            <p class="main-header__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
+            <p class="main-header__information">My name is Vincent Aceto and I am a NYC-based Freelance Web Developer.  While I mainly work with Frontend code, I am defintely no stranger to the server.  Interested in working together? Feel free to get in contact with me!</p>
             <!-- Fluid Social Component -->
             <ul class="fluid-social">
                 <li class="fluid-social__links"><a href="#"><i class="fa fa-github"></i></a></li>
                 <li class="fluid-social__links"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 <li class="fluid-social__links"><a href="#"><i class="fa fa-codepen"></i></a></li>
                 <li class="fluid-social__links"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+            <!-- Rotate Navi -->
+            <ul class="rotated-navi">
+                <li class="rotated-navi__links"><a href="#Contact">Contact</a></li>
+                <li class="rotated-navi__links"><a href="#Projects">Projects</a></li>
+                <li class="rotated-navi__links"><a class="active" href="#blog-window">Blog</a></li>
             </ul>
         </section>
     </header>
@@ -38,22 +47,32 @@
                 </div>
         </section>
         <!-- ./blog-container -->
-        <section class="projects">
+        <section id="Projects" class="projects">
             <article class="project-content">
+                <ul class="fluid-items">
+                    <li class="fluid-items__item"><a href="https://github.com/vinnyA3/devs-codex" target="_blank"><i class="fa fa-github"></i></a></li>
+                </ul>
                 <h3 class="project__title">Developers Codex</h3>
-                <p class="project__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
+                <p class="project__information">A handy field guide for Frontend web developers.</p>
             </article>
             <article class="project-content">
+                 <ul class="fluid-items">
+                    <li class="fluid-items__item"><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li class="fluid-items__item"><a href="#" target="_blank"><i class="fa fa-globe"></i></a></li>
+                </ul>
                 <h3 class="project__title">Swap N Go</h3>
-                <p class="project__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
+                <p class="project__information">Progressive web appication that enables book sharing among voracious readers.</p>
             </article>
             <article class="project-content">
+                 <ul class="fluid-items">
+                    <li class="fluid-items__item"><a href="#" target="_blank"><i class="fa fa-globe"></i></a></li>
+                </ul>
                 <h3 class="project__title">VME Creative</h3>
-                <p class="project__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
+                <p class="project__information">A modern web site for VME Creative Development and Design.</p>
             </article>
         </section>
         <!-- ./projects -->
-        <section class="contact">
+        <section id="Contact" class="contact">
             <article class="contact-content">
                 <h3 class="contact__title">Get in touch</h3>
                 <p class="contact__information">Bacon ipsum dolor amet ea qui occaecat lorem, ut dolor jowl culpa hamburger laboris bacon nisi. Pastrami brisket ea shoulder. Frankfurter pancetta reprehenderit ut ex shankle. Corned beef veniam irure reprehenderit pork et cillum occaecat in filet mignon.</p>
