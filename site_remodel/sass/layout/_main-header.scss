@@ -4,6 +4,7 @@
     // main-header_
 
     @include break(lg) {
+        @include padding(2em, 2em, 2em, 5.5em);
         @include flex($justify: center, $align: center);
         position: fixed;
         width: 48%;
