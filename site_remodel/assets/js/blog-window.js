@@ -1,3 +1,4 @@
+var Vue = require('vue');
 var blog_window = new Vue({
     el: '#blog-window',
     data: {
@@ -22,7 +23,8 @@ var blog_window = new Vue({
     },
     // Not pure
     filters: {
-        trimString: function(str, truncateBy = 180) {
+        trimString: function(str) {
+            var truncateBy = 180;
             return !str ? '' : [str.slice(0, truncateBy), ' ...'].join('');
         }
     },
@@ -36,8 +38,7 @@ var blog_window = new Vue({
     computed: {
         styles: function() {
             return {
-                background: 'url('+this.posts[this.currentPost].image+') \
-                center center / cover no-repeat'
+                background: 'url('+this.posts[this.currentPost].image+') center center / cover no-repeat'
             }
         }
     }
