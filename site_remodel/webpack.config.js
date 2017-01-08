@@ -28,10 +28,20 @@ module.exports = {
 			}
 		]
 	},
+	/*plugins: [
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: '"production"'
+			}
+		})
+	],*/
 	postcss: function() {
 		return [precss, autoprefixer];
 	},
 	resolve: {
+		alias: {
+			'vue$': 'vue/dist/vue.common'
+		},
 		extensions: ['','.js']
 	}
 }
