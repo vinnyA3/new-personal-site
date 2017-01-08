@@ -1,0 +1,16 @@
+.hamburger {
+    @include padding;
+    color: #fff;
+    font-size: 1.6rem;
+    background: $secondary-site-color;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-left: .08em solid #fff;
+    border-bottom: .08em solid #fff;
+    z-index: 5000;
+
+    @include break(lg) {
+        display: none;
+    }
+}

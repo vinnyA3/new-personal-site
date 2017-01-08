@@ -1,0 +1,13 @@
+.fluid-items {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &__item {
+        display: inline;
+        
+        &:not(:last-child) {
+            margin-right: 1em;
+        }
+    }
+}
