@@ -19,6 +19,11 @@ html, body {
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    background: $secondary-site-color;
+    
+    @include break(lg) {
+        overflow-x: hidden;
+    }
 }
 
 a {
