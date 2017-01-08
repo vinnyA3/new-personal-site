@@ -1,4 +1,9 @@
 .site-content {
+    opacity: 1;
     background: $secondary-site-color;
     color: #fff;
+
+    @include break(lg) {
+        opacity: 0;
+    }
 }
